@@ -1,13 +1,18 @@
 <div align="center">
 
-# Lumen
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/brand/hero-dark.png">
+    <img src="assets/brand/hero-light.png" alt="lumen, an Orin DX tool" width="360">
+  </picture>
+</p>
 
 **Transcript parser, prompt cache accountant, and trajectory analyzer for AI coding agents.**
 
-[![CI](https://github.com/orin-axi/lumen/actions/workflows/ci.yml/badge.svg)](https://github.com/orin-axi/lumen/actions)
+[![CI](https://github.com/orin-dx/lumen/actions/workflows/ci.yml/badge.svg)](https://github.com/orin-dx/lumen/actions)
 [![License: FSL-1.1-MIT](https://img.shields.io/badge/License-FSL--1.1--MIT-blue.svg)](https://functional-source-license.com/1.1/)
 [![Rust: 1.80+](https://img.shields.io/badge/Rust-1.80+-orange.svg)](https://www.rust-lang.org)
-[![MSRV: 1.80](https://img.shields.io/badge/MSRV-1.80-brightgreen.svg)](https://github.com/orin-axi/lumen)
+[![MSRV: 1.80](https://img.shields.io/badge/MSRV-1.80-brightgreen.svg)](https://github.com/orin-dx/lumen)
 
 [Overview](#overview) • [Pipeline](#architecture-pipeline) • [Features](#features) • [Installation](#installation) • [CLI Reference](#cli-reference) • [Rust SDK](#rust-crate-usage) • [Benchmarks](#benchmarks)
 
@@ -118,7 +123,7 @@ Lumen crates are not yet published to crates.io, so `cargo install lumen-cli` an
 the first crate publishes, build from source:
 
 ```bash
-git clone https://github.com/orin-axi/lumen.git
+git clone https://github.com/orin-dx/lumen.git
 cd lumen
 cargo build --release --workspace
 ./target/release/lumen --help
@@ -294,8 +299,8 @@ release:
 
 ```toml
 [dependencies]
-lumen-model = { git = "https://github.com/orin-axi/lumen" }
-lumen-session = { git = "https://github.com/orin-axi/lumen" }
+lumen-model = { git = "https://github.com/orin-dx/lumen" }
+lumen-session = { git = "https://github.com/orin-dx/lumen" }
 ```
 
 ```rust
